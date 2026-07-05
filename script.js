@@ -5,6 +5,28 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---- Mobile menu toggle ---- */
+  var nav = document.querySelector(".nav");
+  var toggle = document.querySelector(".nav__toggle");
+  if (nav && toggle) {
+    var setOpen = function (open) {
+      nav.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    toggle.addEventListener("click", function () {
+      setOpen(!nav.classList.contains("is-open"));
+    });
+    // Close when a link is tapped
+    nav.querySelectorAll(".nav__links a").forEach(function (a) {
+      a.addEventListener("click", function () { setOpen(false); });
+    });
+    // Close on Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+  }
+
   /* ---- Mark sections for reveal ---- */
   var revealTargets = document.querySelectorAll(
     ".section, .hero__title, .hero__lede, .hero__actions, .titleblock, .marquee"

@@ -33,7 +33,7 @@
       <span class="nav__mark">SMAFR</span>
       <span class="nav__meta">MECH · ENG</span>
     </a>
-    <nav class="nav__links" aria-label="Primary">
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
@@ -44,6 +44,9 @@
     <a class="nav__cta" href="#contact">
       <span class="dot"></span> Available
     </a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main id="top">
@@ -119,7 +122,7 @@
       <div class="about">
         <div class="about__lead">
           <figure class="plate">
-            <img src="images/profile.jpg" alt="S. M. Abul Fatha Rifat, Mechanical Engineer" width="640" height="640" loading="lazy" />
+            <img src="images/profile.webp" alt="S. M. Abul Fatha Rifat, Mechanical Engineer" width="640" height="640" loading="lazy" />
             <figcaption>FIG. 01 — S. M. Abul Fatha Rifat · Mechanical Engineer</figcaption>
           </figure>
           <h2 class="h2">Bridging theoretical knowledge with real-life practical applications.</h2>
@@ -474,7 +477,7 @@
             work."
           </blockquote>
           <figcaption>
-            <img class="quote__avatar" src="images/ramesh.png" alt="Professor Ramesh Narayanaswamy" width="48" height="48" loading="lazy" />
+            <img class="quote__avatar" src="images/ramesh.webp" alt="Professor Ramesh Narayanaswamy" width="48" height="48" loading="lazy" />
             <span>
               <span class="quote__name">Professor Ramesh Narayanaswamy</span>
               <span class="quote__role">Deputy Head, School of Civil &amp; Mechanical Engineering, Curtin University</span>
@@ -490,7 +493,7 @@
             experimental research."
           </blockquote>
           <figcaption>
-            <img class="quote__avatar" src="images/muammer.jpg" alt="Dr. Muammer Din Arif" width="48" height="48" loading="lazy" />
+            <img class="quote__avatar" src="images/muammer.webp" alt="Dr. Muammer Din Arif" width="48" height="48" loading="lazy" />
             <span>
               <span class="quote__name">Dr. Muammer Din Arif</span>
               <span class="quote__role">Assistant Professor, Military Institute of Science &amp; Technology (MIST)</span>
@@ -512,27 +515,27 @@
     <!-- full-bleed rolling strip -->
     <div class="gallery" aria-label="Photo gallery">
       <div class="gallery__track">
-        <figure class="gframe"><img src="images/gallery/p1.jpeg" alt="Graduation, Curtin University" loading="lazy" /><figcaption>Graduation · Curtin</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p9.jpg" alt="On-site plant operations in PPE" loading="lazy" /><figcaption>On-site · Plant ops</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p5.jpeg" alt="Research poster showcase" loading="lazy" /><figcaption>Research showcase</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p7.jpg" alt="Playing music" loading="lazy" /><figcaption>Off the clock · Keyboard</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p2.jpeg" alt="With colleagues" loading="lazy" /><figcaption>With the team</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p10.jpg" alt="Field work in PPE" loading="lazy" /><figcaption>Field work · PPE</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p8.jpg" alt="Colleagues" loading="lazy" /><figcaption>Colleagues</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p3.jpeg" alt="In Perth" loading="lazy" /><figcaption>Perth</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p4.jpeg" alt="The crew" loading="lazy" /><figcaption>The crew</figcaption></figure>
-        <figure class="gframe"><img src="images/gallery/p6.jpeg" alt="Downtime" loading="lazy" /><figcaption>Downtime</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p1.webp" alt="Graduation, Curtin University" loading="lazy" /><figcaption>Graduation · Curtin</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p9.webp" alt="On-site plant operations in PPE" loading="lazy" /><figcaption>On-site · Plant ops</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p5.webp" alt="Research poster showcase" loading="lazy" /><figcaption>Research showcase</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p7.webp" alt="Playing music" loading="lazy" /><figcaption>Off the clock · Keyboard</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p2.webp" alt="With colleagues" loading="lazy" /><figcaption>With the team</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p10.webp" alt="Field work in PPE" loading="lazy" /><figcaption>Field work · PPE</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p8.webp" alt="Colleagues" loading="lazy" /><figcaption>Colleagues</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p3.webp" alt="In Perth" loading="lazy" /><figcaption>Perth</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p4.webp" alt="The crew" loading="lazy" /><figcaption>The crew</figcaption></figure>
+        <figure class="gframe"><img src="images/gallery/p6.webp" alt="Downtime" loading="lazy" /><figcaption>Downtime</figcaption></figure>
         <!-- duplicate set for a seamless loop (aria-hidden so screen readers don't repeat) -->
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p1.jpeg" alt="" loading="lazy" /><figcaption>Graduation · Curtin</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p9.jpg" alt="" loading="lazy" /><figcaption>On-site · Plant ops</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p5.jpeg" alt="" loading="lazy" /><figcaption>Research showcase</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p7.jpg" alt="" loading="lazy" /><figcaption>Off the clock · Keyboard</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p2.jpeg" alt="" loading="lazy" /><figcaption>With the team</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p10.jpg" alt="" loading="lazy" /><figcaption>Field work · PPE</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p8.jpg" alt="" loading="lazy" /><figcaption>Colleagues</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p3.jpeg" alt="" loading="lazy" /><figcaption>Perth</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p4.jpeg" alt="" loading="lazy" /><figcaption>The crew</figcaption></figure>
-        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p6.jpeg" alt="" loading="lazy" /><figcaption>Downtime</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p1.webp" alt="" loading="lazy" /><figcaption>Graduation · Curtin</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p9.webp" alt="" loading="lazy" /><figcaption>On-site · Plant ops</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p5.webp" alt="" loading="lazy" /><figcaption>Research showcase</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p7.webp" alt="" loading="lazy" /><figcaption>Off the clock · Keyboard</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p2.webp" alt="" loading="lazy" /><figcaption>With the team</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p10.webp" alt="" loading="lazy" /><figcaption>Field work · PPE</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p8.webp" alt="" loading="lazy" /><figcaption>Colleagues</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p3.webp" alt="" loading="lazy" /><figcaption>Perth</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p4.webp" alt="" loading="lazy" /><figcaption>The crew</figcaption></figure>
+        <figure class="gframe" aria-hidden="true"><img src="images/gallery/p6.webp" alt="" loading="lazy" /><figcaption>Downtime</figcaption></figure>
       </div>
     </div>
 
