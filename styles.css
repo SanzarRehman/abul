@@ -343,6 +343,38 @@ a { color: inherit; text-decoration: none; }
   align-items: start;
 }
 .about__lead .h2 { max-width: 15ch; }
+
+/* Portrait presented as a technical figure plate */
+.plate {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 10px;
+  background: var(--sheet);
+  border: 1px solid var(--hair);
+  max-width: 340px;
+}
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(0.15) contrast(1.02);
+}
+.plate figcaption {
+  font-family: var(--font-mono);
+  font-size: .64rem;
+  letter-spacing: .08em;
+  color: var(--steel);
+  padding: .7rem 2px 2px;
+}
+/* corner registration ticks on the plate */
+.plate::before, .plate::after {
+  content: "";
+  position: absolute;
+  width: 10px; height: 10px;
+  border: 1.5px solid var(--signal);
+}
+.plate::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+.plate::after  { top: -1px; right: -1px; border-left: none; border-bottom: none; }
 .about__body p { margin-bottom: 1.15rem; color: var(--steel); }
 .about__body p:last-child { margin-bottom: 0; }
 .about__note {
@@ -634,6 +666,15 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: .6rem;
 }
 .quote blockquote { font-size: 1rem; line-height: 1.7; margin-bottom: 1.4rem; }
+.quote figcaption { display: flex; align-items: center; gap: .85rem; }
+.quote__avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--hair);
+  flex-shrink: 0;
+  filter: grayscale(0.2);
+}
 .quote__name { display: block; font-family: var(--font-display); font-weight: 700; font-size: .98rem; }
 .quote__role { display: block; font-family: var(--font-mono); font-size: .72rem; color: var(--steel); margin-top: .3rem; }
 
